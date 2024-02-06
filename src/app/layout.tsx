@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { type ReactNode } from 'react'
 import { NavBar } from '../components/NavBar'
+import { Footer } from '../components/Footer'
 
 import { Providers } from './providers'
 
@@ -20,6 +21,7 @@ export default function RootLayout(props: { children: ReactNode }) {
         <Providers>
           <NavBar />
           {props.children}
+          <Footer />
         </Providers>
       </body>
     </html>
