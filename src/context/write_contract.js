@@ -1,10 +1,9 @@
 'use client'
 
+import { ethers } from 'ethers'
+
 // INTENAL IMPORT
 import { CrowdFundingABI, CrowdFundingAddress } from './constants'
 
-import { useReadContract } from 'wagmi'
+import { useWriteContract, useAccount } from 'wagmi'
 
-export const getCampaigns = () => {
-    
-}
